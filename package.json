@@ -1,0 +1,19 @@
+{
+	"name": "formdata-to-object",
+	"version": "1.0.0",
+	"description": "Convert formdata to objects ruby-on-rails style",
+	"main": "build/index.js",
+	"type": "module",
+	"scripts": {
+		"test": "uvu source/test",
+		"build": "esbuild source/index.js --outfile=build/index.js --bundle --format=esm --sourcemap --minify",
+		"prepare": "npm run build"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"esbuild": "^0.19.2",
+		"uvu": "^0.5.6"
+	}
+}
